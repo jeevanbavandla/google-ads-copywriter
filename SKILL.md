@@ -147,9 +147,10 @@ Ad Group,Phone Number
 **File name format:** `[client-name]-[ad-group-or-campaign-theme]-[YYYY-MM-DD].csv`
 
 Examples:
-- `sobha-luxury-apartments-2026-03-27.csv`
-- `digiskills-google-ads-course-2026-03-27.csv`
-- `acme-ppc-agency-2026-03-27.csv`
+- `luxury-apartments-search-2026-03-27.csv`
+- `online-course-google-ads-2026-03-27.csv`
+- `ppc-agency-free-audit-2026-03-27.csv`
+- `saas-free-trial-campaign-2026-03-27.csv`
 
 Keep the client name short and slug-like. Include the ad group or campaign theme so the file is immediately identifiable without opening it.
 

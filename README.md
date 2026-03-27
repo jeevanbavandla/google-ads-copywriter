@@ -2,7 +2,7 @@
 
 A Claude Code skill that writes complete Google Search ad packages in one shot — 15 RSA headlines, 4 descriptions, 6 sitelinks, 10 callout extensions, structured snippets, and a call extension — output as a clean CSV ready to paste into Google Sheets.
 
-Built to hit **Excellent Ad Strength** on every output.
+Built to hit **Excellent Ad Strength** on every output. Works for any industry.
 
 ---
 
@@ -17,6 +17,24 @@ Give it a keyword and a landing page URL. It fetches the page, extracts your USP
 - 10 callout extensions (specific USP phrases, not generic filler)
 - Structured snippets (header type auto-selected based on business type)
 - Call extension
+
+---
+
+## Works For Any Industry
+
+This skill adapts to whatever business you're running ads for:
+
+| Industry | Example keyword |
+|---|---|
+| Real estate | "2BHK flats for sale in [city]" |
+| SaaS | "project management software for teams" |
+| E-commerce | "buy running shoes online" |
+| Education | "digital marketing course online" |
+| Local services | "plumber near me" |
+| Healthcare | "physiotherapy clinic [city]" |
+| B2B / Agency | "Google Ads agency for startups" |
+
+The landing page is the source of truth — the skill pulls USPs, proof points, and CTAs directly from the page so copy is always specific to the business, never generic.
 
 ---
 
@@ -45,10 +63,10 @@ Restart Claude Code after installing.
 Start Claude Code in any project and say:
 
 ```
-write google ads copy for [client name or business]
+write google ads copy for [business name]
 ```
 
-Or:
+Or provide more detail:
 
 ```
 Keyword: [your target keyword]
@@ -57,15 +75,9 @@ Landing page: [URL]
 Write google ads copy for this
 ```
 
-Claude will ask for any missing inputs (phone number, USPs if the page doesn't have them), then generate the full package.
+Claude will ask for any missing inputs (phone number, USPs if the page doesn't have them), then generate the full package and save it as a CSV.
 
-**Multiple ad groups:** Provide multiple keywords/ad group names and it will generate a complete copy set for each one in the same CSV.
-
----
-
-## Example Output
-
-See [`examples/rajapushpa-2bhk-hyderabad-sample.csv`](examples/rajapushpa-2bhk-hyderabad-sample.csv) for a real output — a residential real estate client in Hyderabad targeting "2BHK Flats in Hyderabad for Sale".
+**Multiple ad groups:** Provide multiple keywords/ad group names and it generates a complete copy set for each one in the same CSV.
 
 ---
 
@@ -77,8 +89,6 @@ google-ads-copywriter/
 ├── references/
 │   ├── google-ads-specs.md           # Exact character limits for every ad element
 │   └── copywriting-best-practices.md # Headline formulas, description frameworks, extension strategy
-├── examples/
-│   └── rajapushpa-2bhk-hyderabad-sample.csv
 ├── install.sh
 └── README.md
 ```
